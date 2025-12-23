@@ -1,17 +1,9 @@
-import Header from './components/header/header'
-import { useState } from 'react'
+import Game from "./components/board/board"
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  function handleClick() {
-    setCount(count +1)
-  }
-
   return (
     <>
-    <Header />
-    <button onClick={handleClick}>Clicked {count} times</button>
+    <Game />
     </>
   )
 }
